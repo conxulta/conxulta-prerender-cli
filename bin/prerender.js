@@ -22,6 +22,7 @@ if ((args.includes('-h') || args.includes('--help')) && args.includes('config'))
 program
   .name('prerender')
   .description('CLI per il prerendering di siti JavaScript offline')
+  .version('1.3.3', '-v, --version', 'Mostra la versione corrente')
   .usage('-u <url|sitemap> -f <formati> -o <output> [options]')
   .option('-u, --url <url>', 'URL singola o sitemap.xml')
   .option('-f, --formats <formats>', 'html, pdf, screenshot, text, html-embedded')
