@@ -1,6 +1,6 @@
 {
   "name": "prerender-cli-conxulta",
-  "version": "1.3.3",
+  "version": "1.3.2",
   "description": "CLI per il prerendering completo e offline di siti web JavaScript",
   "bin": {
     "prerender": "./bin/prerender.js"

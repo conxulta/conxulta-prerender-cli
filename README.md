@@ -1,4 +1,4 @@
-# Prerender CLI Conxulta (v1.3.2)
+# Prerender CLI Conxulta
 
 CLI per il prerendering completo e offline di pagine web JavaScript.  
 Consente di generare snapshot delle pagine con contenuti completamente embedded e pronti per uso offline.
@@ -22,6 +22,7 @@ Consente di generare snapshot delle pagine con contenuti completamente embedded 
 - 💬 Commento HTML con timestamp di generazione
 - 🧪 Supporta banner cookie tipo GDPR (es. `gdpr: true`)
 - 🆘 Comando `-h config` per visualizzare esempio JSON
+- 📌 Comando `-v` per visualizzare la versione
 
 ---
 
@@ -59,6 +60,7 @@ prerender -u https://example.com -f screenshot,html -w 1440 --cookies '{"gdpr": 
 ```bash
 prerender -h
 prerender -h config
+prerender -v
 ```
 
 ---

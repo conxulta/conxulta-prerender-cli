@@ -1,0 +1,9 @@
+
+# Esclude file e cartelle non necessari alla pubblicazione
+config.default.json
+README.md
+*.zip
+*.log
+output/
+screenshots/
+test/
