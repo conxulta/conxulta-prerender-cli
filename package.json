@@ -1,7 +1,7 @@
 {
   "name": "prerender-cli-conxulta",
-  "version": "1.1.7",
-  "description": "CLI per il prerendering di siti web (HTML, PDF, screenshot, testo, JSON, CSV)",
+  "version": "1.2.6",
+  "description": "CLI offline HTML renderer con immagini, CSS, icone, font embedded e gestione GDPR",
   "bin": {
     "prerender": "./bin/prerender.js"
   },
@@ -9,7 +9,8 @@
     "commander": "^8.0.0",
     "fs-extra": "^10.0.0",
     "puppeteer": "5.5.0",
-    "xml2js": "^0.4.23"
+    "xml2js": "^0.4.23",
+    "html-minifier-terser": "^7.0.0"
   },
   "engines": {
     "node": ">=12.0.0"

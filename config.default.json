@@ -1,6 +1,10 @@
 {
   "url": "https://www.miosito.it/sitemap.xml",
-  "formats": ["html", "pdf", "screenshot", "text"],
+  "formats": ["html-embedded", "html-minified", "screenshot"],
   "output": "./output",
-  "csv": true
+  "csv": true,
+  "width": 1024,
+  "cookies": {
+    "gdpr": "true"
+  }
 }
