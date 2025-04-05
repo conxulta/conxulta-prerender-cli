@@ -3,6 +3,21 @@
    Entries may not always be in chronological/commit order.
    See license at the end of file. */
 
+2025-04-05 20:28 CEST+0200 Francesco Saverio Giudice (francesco/at/conxulta.it)
+  * package.json
+    + updated project metadata and version to 1.4.1
+  * lib/render.js
+    ! translated CLI messages from Italian to English
+    ! ensured CLI parameter override logic is consistent
+  ; commit: v1.4.1 - finalized English-only release and CLI behavior
+
+* package.json
+    + added 'repository', 'keywords', 'bugs', 'homepage' fields
+    + updated project version to 1.4.1
+  * bin/prerender.js
+    ! updated internal version in --version help output
+  ; commit: v1.4.1 - metadata updated for npm publication and CLI version reporting
+
 2025-04-05 19:53 CEST+0200 Francesco Saverio Giudice (francesco/at/conxulta.it)
   * bin/prerender.js
     + added CLI help display for `-v` version flag
@@ -43,4 +58,3 @@
   * lib/render.js
     + initial scroll behavior and config merge via program.opts()
     + support for screenshots, html-embedded, and cookie injection
-

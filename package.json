@@ -1,12 +1,24 @@
 {
   "name": "prerender-cli-conxulta",
-  "version": "1.4.0",
-  "description": "A command-line tool for prerendering JavaScript-based web pages into fully offline snapshots.",
+  "version": "1.4.1",
+  "description": "CLI for prerendering JavaScript-based webpages into static, offline-ready snapshots.",
   "bin": {
     "prerender": "./bin/prerender.js"
   },
   "author": "Francesco Saverio Giudice",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/conxulta/conxulta-prerender-cli.git"
+  },
+  "keywords": [
+    "prerender", "cli", "seo", "javascript", "html", "pdf",
+    "screenshot", "offline", "gdpr", "puppeteer", "automation", "static"
+  ],
+  "homepage": "https://github.com/conxulta/conxulta-prerender-cli#readme",
+  "bugs": {
+    "url": "https://github.com/conxulta/conxulta-prerender-cli/issues"
+  },
   "dependencies": {
     "commander": "^8.0.0",
     "fs-extra": "^10.0.0",
