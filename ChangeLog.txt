@@ -3,6 +3,12 @@
    Entries may not always be in chronological/commit order.
    See license at the end of file. */
 
+2025-04-05 22:33 CEST+0200 Francesco Saverio Giudice (francesco/at/conxulta.it)
+  * lib/render.js
+    + re-enabled support for formats: html, html-embedded, and text
+    + added CSV generation with page load time and HTML content size
+  ; commit: v1.4.2 - added content export and acquisition timing features
+
 2025-04-05 20:28 CEST+0200 Francesco Saverio Giudice (francesco/at/conxulta.it)
   * package.json
     + updated project metadata and version to 1.4.1

@@ -1,6 +1,10 @@
 # Prerender CLI Conxulta
 
-A command-line tool for prerendering JavaScript-based web pages into fully offline snapshots.  
+[![npm version](https://img.shields.io/npm/v/prerender-cli-conxulta.svg)](https://www.npmjs.com/package/prerender-cli-conxulta)
+
+CLI for prerendering JavaScript-based webpages into static, offline-ready snapshots.
+
+A command-line tool for prerendering JavaScript-based web pages into fully offline snapshots.
 Useful for SEO, archiving, audits, and providing lightweight static fallbacks.
 
 ---

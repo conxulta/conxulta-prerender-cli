@@ -22,7 +22,7 @@ if ((args.includes('-h') || args.includes('--help')) && args.includes('config'))
 program
   .name('prerender')
   .description('CLI for prerendering JavaScript-based web pages\\n© 2025 Francesco Saverio Giudice – Conxulta CLI Tools')
-  .version('1.4.1', '-v, --version', 'Show current version')
+  .version('1.4.2', '-v, --version', 'Show current version')
   .usage('-u <url|sitemap> -f <formats> -o <output> [options]')
   .option('-u, --url <url>', 'single URL or sitemap.xml')
   .option('-f, --formats <formats>', 'html, pdf, screenshot, text, html-embedded')
