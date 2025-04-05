@@ -1,0 +1,6 @@
+{
+  "url": "https://www.miosito.it/sitemap.xml",
+  "formats": ["html", "pdf", "screenshot", "text"],
+  "output": "./output",
+  "csv": true
+}

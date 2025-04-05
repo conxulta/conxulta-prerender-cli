@@ -1,0 +1,19 @@
+{
+  "name": "prerender-cli-conxulta",
+  "version": "1.0.0",
+  "description": "CLI per il prerendering di siti web (HTML, PDF, screenshot, testo, JSON, CSV)",
+  "bin": {
+    "prerender": "./bin/prerender.js"
+  },
+  "dependencies": {
+    "commander": "^8.0.0",
+    "fs-extra": "^10.0.0",
+    "puppeteer": "5.5.0",
+    "xml2js": "^0.4.23"
+  },
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "author": "Francesco Saverio Giudice",
+  "license": "MIT"
+}
