@@ -1,0 +1,46 @@
+/* Encoding: UTF-8 (No BOM)  Notation (in 5th position):
+     * Change, ! Fix, % Optimization, + Addition, - Removal, ; Comment
+   Entries may not always be in chronological/commit order.
+   See license at the end of file. */
+
+2025-04-05 19:53 CEST+0200 Francesco Saverio Giudice (francesco/at/conxulta.it)
+  * bin/prerender.js
+    + added CLI help display for `-v` version flag
+    + added `-h config` to print example configuration JSON inline
+
+  * lib/render.js
+    ! fixed CLI > config precedence issue (CLI args now override file)
+      ensured config file is loaded only once and parsed before CLI merge
+      replaced use of `program.<param>` with `program.opts()` for consistency
+    ! removed duplicate merges and declarations
+    ! added scroll, width and cookie application as stable features
+
+  ; commit: v1.4.0 - CLI stabilization with correct CLI parameter precedence over config file
+    also updated all documentation and source texts to English as primary project language
+
+2025-04-05 19:31 UTC+0200 Francesco Saverio Giudice (francesco/at/conxulta.it)
+  * bin/prerender.js
+    + added --version and -v flag for CLI version reporting
+    + added support for -h config to print example config JSON
+
+  * lib/render.js
+    ! fixed parameter merge order: CLI options now override config file
+    ! replaced all console.log() with debugLog() in debug mode
+    ! ensured config file is read only once and only when specified
+    ! removed duplicate declarations of 'config'
+    ! fixed bug with width parameter not overriding config
+    ! ensured that final config is printed only if --debug is passed
+
+2025-04-05 17:20 UTC+0200 Francesco Saverio Giudice (francesco/at/conxulta.it)
+  * lib/render.js
+    + added support for --width and filename suffix _WIDTHpx.png
+    + added scroll automation to ensure footer and dynamic content visible
+
+2025-04-05 16:05 UTC+0200 Francesco Saverio Giudice (francesco/at/conxulta.it)
+  * bin/prerender.js
+    + added help output when no parameters passed
+
+  * lib/render.js
+    + initial scroll behavior and config merge via program.opts()
+    + support for screenshots, html-embedded, and cookie injection
+

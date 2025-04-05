@@ -1,36 +1,35 @@
 # Prerender CLI Conxulta
 
-CLI per il prerendering completo e offline di pagine web JavaScript.  
-Consente di generare snapshot delle pagine con contenuti completamente embedded e pronti per uso offline.
+A command-line tool for prerendering JavaScript-based web pages into fully offline snapshots.  
+Useful for SEO, archiving, audits, and providing lightweight static fallbacks.
 
 ---
 
-## ✅ Funzionalità principali
+## Features
 
-- 🔁 Rendering da URL singola o sitemap XML
-- 📦 Generazione formati:
-  - `html` → versione completa renderizzata
-  - `html-embedded` → HTML con immagini, CSS, favicon inline
-  - `screenshot` → immagine PNG della pagina con scroll completo
-  - `pdf` → esportazione in formato PDF
-  - `text` → solo contenuto testuale della pagina
-- 🧠 Scroll automatico fino al fondo della pagina (`autoScroll`)
-- 📐 Larghezza viewport personalizzabile (`--width`, default `1024px`)
-- 📸 Nomi dei file salvati con suffisso dimensione (`_1024px.png`)
-- 🍪 Gestione cookie (`--cookies` o da `config.json`)
-- 📄 Salvataggio metadati e tempi (`dati.json`, `tempi.csv`)
-- 💬 Commento HTML con timestamp di generazione
-- 🧪 Supporta banner cookie tipo GDPR (es. `gdpr: true`)
-- 🆘 Comando `-h config` per visualizzare esempio JSON
-- 📌 Comando `-v` per visualizzare la versione
+- Render single URLs or sitemap-based multi-page scans
+- Generate the following formats:
+  - `html`: rendered version of the page
+  - `html-embedded`: full HTML with all images, CSS, and icons inlined (offline-ready)
+  - `screenshot`: full-page PNG rendered with scroll and optional width
+  - `pdf`: export as print-friendly PDF
+  - `text`: extract readable body content only
+- Auto scroll to activate lazy-loaded or scroll-triggered elements
+- Set custom viewport width using `--width` (default: `1024px`)
+- Output file names suffixed by width (e.g. `_1024px.png`)
+- Supports cookie injection via CLI or config (useful for GDPR banners)
+- Metadata and timing saved as `dati.json` and `tempi.csv`
+- HTML snapshots include timestamp comment at top
+- Help examples available via `-h config`
+- Version display via `-v` or `--version`
 
 ---
 
-## 📄 Esempio di file `config.default.json`
+## Example `config.default.json`
 
 ```json
 {
-  "url": "https://www.miosito.it/sitemap.xml",
+  "url": "https://www.example.com/sitemap.xml",
   "formats": ["html-embedded", "screenshot", "pdf"],
   "output": "./output",
   "width": 1024,
@@ -43,19 +42,19 @@ Consente di generare snapshot delle pagine con contenuti completamente embedded 
 
 ---
 
-## 🧪 Esempio uso CLI
+## CLI Usage
 
 ```bash
-# Con configurazione JSON
+# Using a config file
 prerender -c config.default.json --debug
 
-# Direttamente da riga di comando
-prerender -u https://example.com -f screenshot,html -w 1440 --cookies '{"gdpr": "true"}'
+# Manual configuration from CLI
+prerender -u https://example.com -f html,screenshot -w 1440 --cookies '{"gdpr":"true"}'
 ```
 
 ---
 
-## 🔍 Help CLI
+## Help
 
 ```bash
 prerender -h

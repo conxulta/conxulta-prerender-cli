@@ -1,7 +1,7 @@
 {
   "name": "prerender-cli-conxulta",
-  "version": "1.3.8",
-  "description": "CLI per il prerendering completo e offline di siti web JavaScript",
+  "version": "1.4.0",
+  "description": "A command-line tool for prerendering JavaScript-based web pages into fully offline snapshots.",
   "bin": {
     "prerender": "./bin/prerender.js"
   },

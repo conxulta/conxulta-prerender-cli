@@ -1,5 +1,5 @@
 {
-  "url": "https://www.miosito.it/sitemap.xml",
+  "url": "https://www.mysite.com/sitemap.xml",
   "formats": ["html-embedded", "html-minified", "screenshot"],
   "output": "./output",
   "csv": true,
