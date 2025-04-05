@@ -4,5 +4,5 @@ Strumento CLI per prerendering HTML, PDF, screenshot, testo e JSON strutturato d
 Compatibile con Node.js >=12. Esegui:
 
 ```bash
-npx prerender -c config.json
+npx prerender -c config.default.json
 ```
